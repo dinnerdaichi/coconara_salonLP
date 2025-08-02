@@ -1,0 +1,161 @@
+:root {
+  --color-: #;
+  --color-: #;
+  --bg-: #;
+  --bg-: #;
+}
+
+body {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+}
+.section10 {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  top: 37.5%;
+  left: 5.8%;
+  width: 88.4%;
+  margin: 0 auto;
+  aspect-ratio: 884/490;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.cta__button {
+  position: absolute;
+  bottom: 6%;
+  left: 3%;
+  width: 93%;
+}
+
+.cta__button.float {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .cta__button.float {
+    display: block;
+    position: fixed;
+    bottom: 2%;
+    left: 3%;
+    width: 93%;
+    z-index: 10;
+    -webkit-animation: poyon 3s infinite;
+    animation: poyon 3s infinite;
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .cta__button.float.show {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes poyon {
+  0% {
+    -webkit-transform: scale(1, 1) translate(0%, 0%);
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+  15% {
+    -webkit-transform: scale(0.95, 0.95) translate(0%, 0%);
+    transform: scale(0.95, 0.95) translate(0%, 0%);
+  }
+  30% {
+    -webkit-transform: scale(1.05, 1.05) translate(0%, 0%);
+    transform: scale(1.05, 1.05) translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: scale(0.95, 0.95) translate(0%, 0%);
+    transform: scale(0.95, 0.95) translate(0%, 0%);
+  }
+  70% {
+    -webkit-transform: scale(1.05, 1.05) translate(0%, 0%);
+    transform: scale(1.05, 1.05) translate(0%, 0%);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(0%, 0%);
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+}
+@keyframes poyon {
+  0% {
+    -webkit-transform: scale(1, 1) translate(0%, 0%);
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+  15% {
+    -webkit-transform: scale(0.95, 0.95) translate(0%, 0%);
+    transform: scale(0.95, 0.95) translate(0%, 0%);
+  }
+  30% {
+    -webkit-transform: scale(1.05, 1.05) translate(0%, 0%);
+    transform: scale(1.05, 1.05) translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: scale(0.95, 0.95) translate(0%, 0%);
+    transform: scale(0.95, 0.95) translate(0%, 0%);
+  }
+  70% {
+    -webkit-transform: scale(1.05, 1.05) translate(0%, 0%);
+    transform: scale(1.05, 1.05) translate(0%, 0%);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(0%, 0%);
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+}
