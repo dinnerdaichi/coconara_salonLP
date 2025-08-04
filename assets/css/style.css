@@ -24,6 +24,9 @@ h6 {
 a {
   text-decoration: none;
 }
+a:hover {
+  opacity: 0.7;
+}
 
 ul {
   margin: 0;
