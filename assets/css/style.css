@@ -30,14 +30,14 @@ ul {
 }
 
 li {
-  list-style: none;
   margin: 0;
+  list-style: none;
 }
 
 img {
   width: 100%;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
   vertical-align: middle;
   font-style: italic;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@ img {
 
 .button__wrapper {
   position: absolute;
-  bottom: 6.2%;
+  bottom: 7.2%;
   left: 6%;
   width: 88%;
 }
@@ -91,13 +91,13 @@ img {
 }
 @media screen and (max-width: 480px) {
   .button__wrapper.float {
-    display: block;
     position: fixed;
     bottom: 1%;
     left: 2.5%;
+    z-index: 10;
+    display: block;
     width: 95%;
     opacity: 0;
-    z-index: 10;
     -webkit-transition: all 1s 0s ease;
     transition: all 1s 0s ease;
   }
@@ -108,26 +108,26 @@ img {
 }
 
 .cta__button {
-  text-align: center;
-  text-decoration: none;
-  color: #2194E0;
-  font-size: 24px;
+  position: relative;
   display: inline-block;
-  border-radius: 0.3em;
+  font-size: 24px;
+  color: #2194E0;
+  text-align: center;
+  overflow: hidden;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  position: relative;
-  overflow: hidden;
+  text-decoration: none;
+  border-radius: 0.3em;
 }
 .cta__button::before {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 100%;
-  width: 3em;
-  display: block;
   position: absolute;
   top: 0;
   left: -4.5em;
+  display: block;
+  width: 3em;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  content: "";
   -webkit-transform: skewX(-45deg);
           transform: skewX(-45deg);
   -webkit-animation: shine-pc 6.5s ease-in-out infinite;
@@ -143,96 +143,96 @@ img {
 /* ✨スマホ用✨ */
 @-webkit-keyframes shine-mobile {
   0% {
+    opacity: 0;
     -webkit-transform: skewX(-45deg) translateX(-100%);
             transform: skewX(-45deg) translateX(-100%);
-    opacity: 0;
   }
   4% {
     opacity: 1;
   }
   18% {
+    opacity: 1;
     -webkit-transform: skewX(-45deg) translateX(900%);
             transform: skewX(-45deg) translateX(900%);
-    opacity: 1;
   }
   22% {
     opacity: 0;
   }
   100% {
+    opacity: 0;
     -webkit-transform: skewX(-45deg) translateX(900%);
             transform: skewX(-45deg) translateX(900%);
-    opacity: 0;
   }
 }
 @keyframes shine-mobile {
   0% {
+    opacity: 0;
     -webkit-transform: skewX(-45deg) translateX(-100%);
             transform: skewX(-45deg) translateX(-100%);
-    opacity: 0;
   }
   4% {
     opacity: 1;
   }
   18% {
+    opacity: 1;
     -webkit-transform: skewX(-45deg) translateX(900%);
             transform: skewX(-45deg) translateX(900%);
-    opacity: 1;
   }
   22% {
     opacity: 0;
   }
   100% {
+    opacity: 0;
     -webkit-transform: skewX(-45deg) translateX(900%);
             transform: skewX(-45deg) translateX(900%);
-    opacity: 0;
   }
 }
 /* ✨PC用✨ */
 @media screen and (min-width: 481px) {
   @-webkit-keyframes shine-pc {
     0% {
+      opacity: 0;
       -webkit-transform: skewX(-45deg) translateX(-100%);
               transform: skewX(-45deg) translateX(-100%);
-      opacity: 0;
     }
     4% {
       opacity: 1;
     }
     18% {
+      opacity: 1;
       -webkit-transform: skewX(-45deg) translateX(1600%);
               transform: skewX(-45deg) translateX(1600%);
-      opacity: 1;
     }
     22% {
       opacity: 0;
     }
     100% {
+      opacity: 0;
       -webkit-transform: skewX(-45deg) translateX(1600%);
               transform: skewX(-45deg) translateX(1600%);
-      opacity: 0;
     }
   }
   @keyframes shine-pc {
     0% {
+      opacity: 0;
       -webkit-transform: skewX(-45deg) translateX(-100%);
               transform: skewX(-45deg) translateX(-100%);
-      opacity: 0;
     }
     4% {
       opacity: 1;
     }
     18% {
+      opacity: 1;
       -webkit-transform: skewX(-45deg) translateX(1600%);
               transform: skewX(-45deg) translateX(1600%);
-      opacity: 1;
     }
     22% {
       opacity: 0;
     }
     100% {
+      opacity: 0;
       -webkit-transform: skewX(-45deg) translateX(1600%);
               transform: skewX(-45deg) translateX(1600%);
-      opacity: 0;
     }
   }
 }
